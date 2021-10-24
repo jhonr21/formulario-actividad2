@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <div class="container">
+        <header id="header">
+
+            
+            
+            <h1 id="title" class="text-center">freeCodeCamp Actividad 2</h1>
+            <p id="description" class="description text-center">
+                Por favor lea con cuidado las preguntas y responda segun sea su caso
+            </p>
+           
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+              <label id="name-label" for="name">Nombre</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label id="email-label" for="email">Correo</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter your Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label id="number-label" for="number"
+                >Edad<span class="clue">(optional)</span></label
+              >
+              <input
+                type="number"
+                name="age"
+                id="number"
+                min="10"
+                max="99"
+                class="form-control"
+                placeholder="Age"
+              />
+            </div>
+            <div class="form-group">
+              <p></p>
+              <select id="dropdown" name="country" class="form-control" required>
+                <option disabled selected value>Seleccione su pais </option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Argentina">Argentina</option>
+                <option value="other">Argentina</option>
+              </select>
+            </div>
+        
+            <div class="form-group">
+              <p>Esta estudiando actualmente?</p>
+              <label>
+                <input
+                  name="user-recommend"
+                  value="yes"
+                  type="radio"
+                  class="input-radio"
+                  checked
+                />Si</label
+              >
+              <label>
+                <input
+                  name="user-recommend"
+                  value="maybe"
+                  type="radio"
+                  class="input-radio"
+                />No</label
+              >
+        
+              <label
+                ><input
+                  name="user-recommend"
+                  value="not-sure"
+                  type="radio"
+                  class="input-radio"
+                />Estoy en proceso</label
+              >
+            </div>
+        
+        
+            <div class="form-group">
+              <p>
+                Cuales son los valores mas importante para ti?
+                <span class="clue">(Check all that apply)</span>
+              </p>
+        
+              <label
+                ><input
+                  name="prefer"
+                  value="Valores"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Respeto</label
+              >
+              <label>
+                <input
+                  name="prefer"
+                  value="Valores"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Honestidad</label
+              >
+              <label
+                ><input
+                  name="prefer"
+                  value="Valores"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Tolerancia</label
+              >
+              <label
+                ><input
+                  name="prefer"
+                  value="Valores"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Responsabilidad</label
+              >
+              <label
+                ><input
+                  name="prefer"
+                  value="Valores"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Puntualidd</label
+              >
+              <label
+                ><input
+                  name="prefer"
+                  value="Valores"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Gitter help rooms</label
+              >
+              
+        
+            <div class="form-group">
+              <p>Puede colocar los aspectos mas importante de su vida?</p>
+              <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Enter your comment here..."
+              ></textarea>
+            </div>
+        
+            <div class="form-group">
+              <button type="submit" id="submit" class="submit-button">
+                Enviar
+              </button>
+            </div>
+          </form>
+        <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+        <script src='./app.js'></script>
+</body>
+</html>
